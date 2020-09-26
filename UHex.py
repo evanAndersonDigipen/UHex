@@ -25,8 +25,8 @@ def encodeHex():
     else:
         print("That is not a valid input \n")
         encodeHex()
-        print("Close window when done, it will auto close in 5 minutes")
-        sleep(300)
+    print("Close window when done, it will auto close in 5 minutes")
+    sleep(300)
 def main():
     mode = input("Enter Decode or Encode: ")
     deCode = ["d", "D", "Decode", "decode"]
