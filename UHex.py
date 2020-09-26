@@ -1,6 +1,6 @@
 import codecs
 from os import system
-
+from time import sleep
 def decodeHex():
     system('cls')
     print("Mode Set to Decode \n")
@@ -8,6 +8,8 @@ def decodeHex():
     print("\n")
 
     print(codecs.decode(hexIn, encoding='hex'))
+    print("Close window when done, it will auto close in 5 minutes")
+    sleep(300)
 def encodeHex():
     system('cls')
     print("Mode Set to Encode\n")
@@ -23,6 +25,8 @@ def encodeHex():
     else:
         print("That is not a valid input \n")
         encodeHex()
+        print("Close window when done, it will auto close in 5 minutes")
+        sleep(300)
 def main():
     mode = input("Enter Decode or Encode: ")
     deCode = ["d", "D", "Decode", "decode"]
