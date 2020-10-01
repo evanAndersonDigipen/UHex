@@ -18,7 +18,7 @@ def encodeHex():
     print('\n')
     OX = input("Would you like it with 0x? y/n: ")
     if OX in ['Y', 'y', 'Yes', 'yes']:
-        phraseIn = ''.join(phraseIn[i: i+4] for i in range(0, len(phraseIn), 4))
+        phraseIn = ' '.join(phraseIn[i: i+4] for i in range(0, len(phraseIn), 4))
         print(phraseIn)
     elif OX in ['N', 'n', 'No', 'no']:
         print(phraseIn.replace('0x', ''))
