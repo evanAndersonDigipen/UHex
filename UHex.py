@@ -1,6 +1,6 @@
 import codecs
 from os import system
-from time import sleep
+
 def decodeHex():
     system('cls')
     print("Mode Set to Decode \n")
@@ -9,7 +9,7 @@ def decodeHex():
 
     print(codecs.decode(hexIn, encoding='hex'))
     print("Close window when done, it will auto close in 5 minutes")
-    sleep(300)
+
 def encodeHex():
     system('cls')
     print("Mode Set to Encode\n")
@@ -26,7 +26,7 @@ def encodeHex():
         print("That is not a valid input \n")
         encodeHex()
     print("Close window when done, it will auto close in 5 minutes")
-    sleep(300)
+
 def main():
     mode = input("Enter Decode or Encode: ")
     deCode = ["d", "D", "Decode", "decode"]
@@ -38,5 +38,17 @@ def main():
     else:
         print("You did not select a valid mode, please try again \n")
         main()
+    againFunc()
+def againFunc():
+    again = input("Want to do another? \n")
+    no = ['N', 'n', 'No', 'no']
+    yes = ['Y', 'y', 'Yes', 'yes']
+    if again in yes:
+        main()
+    elif again in no:
+        exit(0)
+    else:
+        print("You didnt select a valid option")
+        againFunc()
 
 main()
