@@ -8,7 +8,7 @@ def decodeHex():
     print("\n")
 
     print(codecs.decode(hexIn, encoding='hex'))
-    print("Close window when done, it will auto close in 5 minutes")
+
 
 def encodeHex():
     system('cls')
@@ -25,7 +25,7 @@ def encodeHex():
     else:
         print("That is not a valid input \n")
         encodeHex()
-    print("Close window when done, it will auto close in 5 minutes")
+
 
 def main():
     mode = input("Enter Decode or Encode: ")
